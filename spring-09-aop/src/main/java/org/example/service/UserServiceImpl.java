@@ -1,12 +1,11 @@
-package org.example.demo2;
+package org.example.service;
 
 /**
  * @Description
  * @Author Kai
- * @Date 2020/12/19 19:49
+ * @Date 2020/12/19 21:06
  */
 public class UserServiceImpl implements UserService{
-    // 不用代理如需打印日志需要在每个方法中新增代码
     @Override
     public void add() {
         System.out.println("add user");
@@ -23,7 +22,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void query() {
-        System.out.println("query user");
+    public void select() {
+        System.out.println("select user");
     }
 }
