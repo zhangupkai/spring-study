@@ -1,6 +1,7 @@
 package org.example.pojo;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * @Date 2020/12/19 18:29
  */
 
-@Repository
+@Component
 public class User {
 
     private String name;

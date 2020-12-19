@@ -1,4 +1,5 @@
 import org.example.config.MyConfig;
+import org.example.pojo.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -12,6 +13,7 @@ public class MyTest {
     public static void main(String[] args) {
         // 注解获得上下文
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
-        context.getBean("getUser");
+        User user = context.getBean("getUser", User.class);
+        System.out.println(user.getName());
     }
 }
