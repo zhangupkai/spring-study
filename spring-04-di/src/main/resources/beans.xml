@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="org.example.pojo.Student" >
+        <property name="name" value="zk"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>红楼梦</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+        <property name="bobbies">
+            <list>
+                <value>listen</value>
+                <value>coding</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="0" value="card1"/>
+            </map>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="studentNo">2020244223</prop>
+                <prop key="name">zhang kai</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="address" class="org.example.pojo.Address">
+
+    </bean>
+
+</beans>

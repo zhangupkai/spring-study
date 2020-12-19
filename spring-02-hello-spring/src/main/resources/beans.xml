@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    bean 对应 对象
+    对象由Spring容器创建  （传统程序对象由程序本身创建）
+
+    程序本身不创建对象，而是被动的接收对象
+    依赖注入：即利用set方法注入
+    -->
+    <bean id="hello" class="org.example.pojo.Hello">
+        <!-- collaborators and configuration for this bean go here -->
+        <property name="str" value="Spring"/>
+    </bean>
+
+
+    <!-- more bean definitions go here -->
+
+</beans>
