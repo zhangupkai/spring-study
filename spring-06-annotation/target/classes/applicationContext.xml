@@ -9,8 +9,9 @@
 
 
     <!--    要扫描的包，这个包下的注解会生效-->
-    <context:component-scan base-package="org.example.pojo"/>
+    <context:component-scan base-package="org.example"/>
     <context:annotation-config/>
 
+<!--    <bean id="user" class="org.example.pojo.User"/>-->
 
 </beans>
